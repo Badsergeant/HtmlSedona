@@ -249,7 +249,7 @@ img {
     background-color:var(--light-gray);
     outline: 5px solid rgba(179, 153, 10, 0.3);
     outline-offset: -5px ; 
-    padding-top:;
+    /* padding-top:; */
     
     
 }
@@ -453,7 +453,7 @@ input:active {
     background-color: var(--light-blue);
 }
 
-.footer-social-list-item-1 {
+/* .footer-social-list-item-1 {
 
 }
 
@@ -464,7 +464,7 @@ input:active {
 .footer-social-list-item-3 {
  
 }
-  
+   */
     
 
 .social-button:hover,
@@ -569,9 +569,9 @@ ul {
     color: var(--light-blue)
 }
 
-.sorting-setting-item a:focus {
+/* .sorting-setting-item a:focus {
     
-}
+} */
 
 .sorting-setting-list,
 .sorting-button-list {
