@@ -73,20 +73,12 @@ img {
     height: 100%;
 }
 
-/*main header logo*/
-
-
-
 /*Main navigation*/
-
-
-
-
 
 .main-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     width: 1200px;
     min-height: 70px;
     outline: 5px solid rgba(0, 255, 0, 0.7);
@@ -103,7 +95,8 @@ img {
     
     /* outline: 5px solid rgba(255, 0, 0, 0.3);
     outline-offset: -5px;  */
-    /* margin-bottom: -70px; */
+    margin-bottom: -70px;
+    align-self: center;
     width: 138px;
     height: 70px;
     z-index: 1;
@@ -111,49 +104,44 @@ img {
 }
 
 .site-navigation {
+    align-self: center;
     display: flex;
-    /* flex-basis: 200px; */
+    justify-content: space-between;
     list-style: none;
     padding: 0;
-    /* margin-top: -70px; */
-    /* margin-bottom: 29px; */
-    width: 1200px;
-    justify-content: space-around;
+    margin: 0;
+    width: 1056px;
     outline: 5px solid rgba(179, 153, 10, 0.3);
     outline-offset: -5px  
 }
 
-/* Example for pixel perfect practice */
-
-.site-navigation li:nth-child(1) {
-    margin-left: 72px;
-}
-
-.site-navigation li:nth-child(2) {
-    margin-left: 134px;
+.site-navigation li {
+    display: flex;
+    max-width: 200px;
+    height: 56px;
+    outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline-offset: -5px;
+    flex-grow: 1;
 }
 
 .site-navigation li:nth-child(3) {
-    margin-left: 418px ;
+    margin-left: auto ;
 }
 
-.site-navigation li:nth-child(4) {
-    margin-left: 147px;
-    margin-right: 72px;
+.site-navigation li:nth-child(2) {
+     margin-right: 400px;
 }
 
 .container {
     width: 1200px;
-    padding: 0 auto;
+    padding: 40px auto;
     margin: 0 auto;
 }
 
-.site-navigation li {
+/* .site-navigation li {
     /* outline: 5px solid rgba(179, 153, 10, 0.3);
     outline-offset: -5px ; */
-    margin: 0;
-    padding-top: 15px;
-}
+    
 
 
 
@@ -194,7 +182,7 @@ img {
 
 .promo {
     /* margin-top: -74px; */
-    margin-bottom: 51px;
+    margin-top: -14px;
     /* display: grid; */
     grid-column: 1/-1;
     outline: 5px solid rgba(179, 153, 10, 0.3);
@@ -202,8 +190,8 @@ img {
 }
 
 .promologo {
-    padding-top: 77.35px;
-    margin-bottom: 41.5px;
+     padding-top: 77.35px;
+    /* margin-bottom: 41.5px; */
     padding-bottom: 0;
     width: 1200px;
     height: 435px;
