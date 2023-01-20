@@ -181,23 +181,20 @@ img {
 }
 
 .promo {
-    /* margin-top: -74px; */
     margin-top: -14px;
-    /* display: grid; */
-    grid-column: 1/-1;
-    outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline: 5px solid rgba(10, 179, 61, 0.626);
     outline-offset: -5px ;
 }
 
 .promologo {
-     padding-top: 77.35px;
-    /* margin-bottom: 41.5px; */
+    padding-top: 77.35px;
+    margin-bottom: 41.5px;
     padding-bottom: 0;
     width: 1200px;
     height: 435px;
     background-image: url(/img/background\ photo.jpg);
     background-repeat: no-repeat;
-    outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline: 5px solid rgba(186, 41, 5, 0.709);
     outline-offset: -5px ;
 }
 
@@ -206,7 +203,7 @@ img {
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 16.5 px;
-     outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline: 5px solid rgba(179, 153, 10, 0.3);
     outline-offset: -5px ; 
 }
 
@@ -242,7 +239,81 @@ img {
     
 }
 
+.features {
+    display: flex;
+}
+
 .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    flex-grow:1 ;
+    padding: 0;
+    margin: 0;
+}
+
+.features-item-1 {
+    flex-basis: 400px; 
+    max-height: 256px;
+    order: 1;
+       
+}
+
+.house {
+    flex-basis: 800px;
+    max-height: 256px;
+    margin-left: auto;
+    order: 2;
+}
+
+.features-item-2 {
+    flex-basis: 400px;
+    max-height: 256px;
+    order: 7;
+}
+
+.bridge {
+    flex-basis: 800px;
+    max-height: 256px;
+    order: 6;
+}
+
+.features-item-3 {
+    flex-basis: 400px;
+    max-height: 256px;
+    order: 8;
+}
+
+.features-item-4 {
+    flex-basis: 400px;
+    max-height: 256px;
+    order: 9;
+}
+
+.features-item-5 {
+    flex-basis: 400px;
+    max-height: 256px;
+    order: 10;
+}
+
+.features-item-recommendation-1 {
+    flex-basis: 400px;
+    order: 3;
+}
+
+.feature-item-recommendation-2 {
+    flex-basis: 400px;
+    order: 4;
+}
+
+.feature-item-recommendation-3 {
+    flex-basis: 400px;
+    order: 5;
+}
+
+
+
+/* .features-list {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 256px 330px 256px 256px;
@@ -325,7 +396,7 @@ img {
     color: var(--basic-white);
     background-color: var(--light-blue);
     
-}
+} */
 
 /*Booking*/
 
