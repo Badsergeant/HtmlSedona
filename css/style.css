@@ -44,14 +44,14 @@
     min-width: 1200px;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 40px;
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color:var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-white);
+    background-color: var(--extra-light-gray);
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -81,8 +81,8 @@ img {
     flex-direction: column;
     width: 1200px;
     min-height: 70px;
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px; 
+    /* outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;  */
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;  
@@ -109,18 +109,19 @@ img {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+    padding-top: 15px;
     margin: 0;
     width: 1056px;
-    outline: 5px solid rgba(179, 153, 10, 0.3);
-    outline-offset: -5px  
+    /* outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline-offset: -5px   */
 }
 
 .site-navigation li {
     display: flex;
     max-width: 200px;
     height: 56px;
-    outline: 5px solid rgba(179, 153, 10, 0.3);
-    outline-offset: -5px;
+    /* outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline-offset: -5px; */
     flex-grow: 1;
 }
 
@@ -181,8 +182,8 @@ img {
 
 .promo {
     margin-top: -14px;
-    outline: 5px solid rgba(10, 179, 61, 0.626);
-    outline-offset: -5px ;
+    /* outline: 5px solid rgba(10, 179, 61, 0.626);
+    outline-offset: -5px ; */
 }
 
 .promologo {
@@ -193,8 +194,8 @@ img {
     height: 435px;
     background-image: url(/img/background\ photo.jpg);
     background-repeat: no-repeat;
-    outline: 5px solid rgba(186, 41, 5, 0.709);
-    outline-offset: -5px ;
+    /* outline: 5px solid rgba(186, 41, 5, 0.709);
+    outline-offset: -5px ; */
 }
 
 .promo h2 {
@@ -202,8 +203,8 @@ img {
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 16.5 px;
-    outline: 5px solid rgba(179, 153, 10, 0.3);
-    outline-offset: -5px ; 
+    /* outline: 5px solid rgba(179, 153, 10, 0.3);
+    outline-offset: -5px ;  */
 }
 
 .promo p {
@@ -484,8 +485,6 @@ input[type="text"] {
     background-color: var(--medium-blue);
 }
 
-/*Footer*/
-
 .location h2 {
     opacity: 0;
     line-height: 0;
@@ -493,13 +492,105 @@ input[type="text"] {
     margin: 0;
 }
 
+/*Footer*/
+
 .main-footer {
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    height: 120px;
+    margin-top: -120px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-left: 136px;
+    padding-right: 131px;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-contacts h2 {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: 189px;
+    line-height: 0;
+}
+
+.footer-contacts p {
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.footer-contacts {
+    width: 200px;
+    height: 61px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+
+
+.footer-social-list {
+    width: 150px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-list-item-1 {
+    display: inline-block;
+    text-align: center;
+    width: 46px;
+    height: 48px;
+    background-color: var(--light-blue);
+}
+
+.footer-social-list-item-1 img {
+    margin-top: 15px;
+}
+
+.footer-social-list-item-2 {
+    display: inline-block;
+    text-align: center;
+    width: 46px;
+    height: 48px;
+    background-color: var(--light-blue);
+}
+
+.footer-social-list-item-2 img {
+    margin-top: 13px;
+}
+
+.footer-social-list-item-3 {
+    display: inline-block;
+    text-align: center;
+    width: 46px;
+    height: 48px;
+    background-color: var(--light-blue);
+}
+
+.footer-social-list-item-3 img {
+    margin-top: 16px;
+}
+
+.footer-copyright {
+    width: 204px;
+    height: 33px;
+    margin: 0;
+}
+
+/* .main-footer {
     height: 120px;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     background: rgba(255, 255, 255, 0.9);
-    /*outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;*/
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
 }
 
 .footer-contacts {
@@ -521,17 +612,7 @@ input[type="text"] {
     justify-self: center;
     grid-column: 2/3;
     text-align: center;
-}
-
-.footer-social ul {
-    
-    list-style: none;
-}
-
-.footer-social-list {
-    width: 46px;
-    background-color: var(--light-blue);
-}
+} */
 
 /* .footer-social-list-item-1 {
 
