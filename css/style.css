@@ -165,7 +165,6 @@ img {
 .features-list,
 .recommendations-list,
 .promo,
-.booking,
 .location {
     list-style: none;
     text-align: center;
@@ -215,6 +214,10 @@ img {
 
 /*Features & recomendations*/
 
+.features {
+    margin-bottom: 58px;
+}
+
 .features-list {
     display: grid;
     grid-template-columns: 400px 400px 400px;
@@ -225,11 +228,6 @@ img {
     background-color: var(--light-gray);
     
 }
-
-/* .features-list li {
-    padding-top: 50px;
-    padding-bottom: 50px;
-} */
 
 .feature-item-1 {
     color: var(--basic-white);
@@ -361,14 +359,27 @@ img {
 
 /*Booking*/
 
+.booking {
+    width: 568px;
+    height: 628px;
+    padding-top: 0;
+    padding-left: 316px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .booking h2 {
     font-size: 30px;
     line-height: 24px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 4px;
 }
 
 .booking-info {
+    vertical-align: middle;
     line-height: 24px;
+    margin-bottom: 24px;
 }
 
 /*Booking form*/
@@ -399,6 +410,13 @@ input:active {
 /*Booking buttons*/
 
 .booking-form-open {
+    display: inline-block;
+    width: 568px;
+    height: 86px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 125px;
+    padding-right: 125px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700px;
@@ -408,6 +426,22 @@ input:active {
     color: var(--basic-white);
     background-color: var(--basic-brown);
     border: none;
+}
+
+.booking-form {
+    padding-top: 55px;
+    text-align: start;
+    padding-top: 55px;
+    padding-left: 55px;
+}
+
+.booking-form input {
+    padding: 6px 13px;
+}
+
+input[type="text"] {
+  width: 346px;
+  height: 38px;
 }
 
 .search {
