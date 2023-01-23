@@ -498,7 +498,7 @@ input[type="text"] {
     background-color: #FFFFFF;
     opacity: 0.9;
     height: 120px;
-    margin-top: -120px;
+    /* margin-top: -120px; */
     display: flex;
     justify-content: space-between;
     padding-top: 23px;
@@ -636,7 +636,21 @@ input[type="text"] {
 
 /*Filter*/
 
+.filters h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    opacity: 0;
+}
+
 .filter {
+    max-width: 1200px;
+    height: 217px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 26.5px;
+    margin-top: -14px;
+    display: flex;
     color: var(--basic-white);
     background-image: url("/img/background.jpg");
     background-position: center;
@@ -644,23 +658,47 @@ input[type="text"] {
     background-size: cover; /*При финальной стилизации удалить background-size и задать требуемые гразмеры изображения*/
 }
 
-.filter-parameters legend {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 700;
+.filter-parameters-1 {
+    width: 135px;
+    height: 157px;
+    padding: 0;
+    margin: 0;
+    margin-right: 120px;
+    border: none;
+    
+} 
+
+.filter-parameters-1 li {
+    margin-bottom: 23px;
 }
 
-ul {
-    list-style: none;
+.filter-parameters-2 {
+    width: 137px;
+    height: 159px;
+    padding: 0;
+    margin: 0;
+    margin-right: 347px;
+    border: none;
 }
 
-.input-range-number {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
+.filter-parameters-2 li {
+    margin-bottom: 23px;
 }
 
-.filter {
+.filter-parameters-list-1,
+.filter-parameters-list-2 {
+    padding: 0;
+}
+
+.filter-parameters-input {
+    width: 316px;
+    height:  138.5px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* .filter {
     display: grid;
     grid-template-columns:  max-content max-content 1fr;
     
@@ -679,7 +717,25 @@ ul {
 .filter-parameters-input {
     justify-self: end;
     grid-column: 3/4;
+} */
+
+.filter-parameters legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
 }
+
+ul {
+    list-style: none;
+}
+
+.input-range-number {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+
 
 /*Sorting*/
 
