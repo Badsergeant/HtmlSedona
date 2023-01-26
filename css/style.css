@@ -636,6 +636,10 @@ input[type="text"] {
 
 /*Filter*/
 
+.inner-page {
+    background-color: #FFFFFF;
+}
+
 .filters h2 {
     margin: 0;
     padding: 0;
@@ -740,6 +744,38 @@ ul {
 /*Sorting*/
 
 .sorting-setting {
+    display: flex;
+    height: 86px;
+}
+
+.sorting-setting-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sorting-setting-list li{
+    display: inline;
+    margin-right: 32px;
+}
+
+.sorting-setting-list li:nth-child(1) {
+    margin-right: 40px;
+}
+
+.sorting-setting h2 {
+    margin: 0;
+    padding: 0;
+    margin-right: 46px;
+}
+
+.sorting-button-list {
+    margin-left: auto;
+    display: flex;
+}
+
+
+
+/* .sorting-setting {
     
     display: grid;
     grid-template-columns: 130px 400px 1fr;
@@ -762,7 +798,7 @@ ul {
 
 .sorting-setting-list li {
     display: inline;
-}
+} */
 
 .sorting-setting h2 {
     font-size: 21px;
@@ -820,7 +856,291 @@ ul {
 
 /*Content-catalog*/
 
+.found-option-title {
+    opacity: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .found-options-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    min-height: 452px;
+}
+    /* padding-top: 30px;
+    padding-left: 73px;
+} */
+
+.found-options-item-1 {
+    display: flex;
+    height: 150px;
+    padding-top: 30px;
+    padding-right: 73px;
+    padding-left: 73px;
+    border: 1px solid var(--light-grey);
+}
+
+.found-options-item-1 img {
+    width: 135px;
+    height: 95px;
+    padding: 0;
+    margin: 0;
+    margin-right: 29px;
+}
+
+.options-hotel-column {
+   width: 258px;
+   height: 95px;
+   padding: 0; 
+}
+
+.options-hotel-column h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 7px;
+    
+}
+
+.cost {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.cost dt {
+    float: left;
+    margin-right: 38.26px;
+}
+
+.cost dd {
+    margin: 0;
+}
+
+.cost-buttons {
+    display: flex;
+    height: 27px;
+}
+
+.more-info-button {
+  width: 110px;
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--basic-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 6px;
+  padding: 3px 17px;
+}
+
+.reserved-button {
+    padding: 3px 17px;
+}
+
+.rating-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    height: 95px;
+    margin-left: auto;
+}
+
+.rating-star p {
+    margin: 0;
+    width: 110px;
+    height: 27px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin-top: auto;
+    background-color: var(--extra-light-gray);
+    color: var(--deep-gray);
+}
+
+.stars4 {
+    width: 75px;
+    height: 17px;
+    padding: 0;
+    margin-bottom: 47px;
+    margin-left: auto;
+    background-image: url(/img/star.svg);
+    background-repeat: repeat-x;
+}
+
+
+
+
+
+
+
+
+.found-options-item-2 {
+    display: flex;
+    height: 150px;
+    padding-top: 30px;
+    padding-right: 73px;
+    padding-left: 73px;
+    border: 1px solid var(--light-grey);
+}
+
+.found-options-item-2 img {
+    width: 135px;
+    height: 95px;
+    padding: 0;
+    margin: 0;
+    margin-right: 29px;
+}
+
+.options-hotel-column {
+   width: 258px;
+   height: 95px;
+   padding: 0; 
+}
+
+.options-hotel-column h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 7px;
+    
+}
+
+.cost {
+    margin: 0;
+    margin-bottom: 15.5px;
+}
+
+.cost dt {
+    float: left;
+    margin-right: 38.26px;
+}
+
+.cost dd {
+    margin: 0;
+}
+
+.cost-buttons {
+    display: flex;
+}
+
+.more-info-button {
+  width: 110px;
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--basic-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 6px;
+  padding: 3px 17px;
+}
+
+.reserved-button {
+    padding: 3px 17px;
+}
+
+.rating-star p {
+    margin: 0;
+    padding-left: 15px;
+    background-color: var(--extra-light-gray);
+    color: var(--deep-gray);
+}
+
+.stars3 {
+    width: 56px;
+    height: 17px;
+    padding: 0;
+    margin-bottom: 47px;
+    margin-left: auto;
+    background-image: url(/img/star.svg);
+    background-repeat: repeat-x;
+}
+
+
+
+
+.found-options-item-3 {
+    display: flex;
+    height: 150px;
+    padding-top: 30px;
+    padding-right: 73px;
+    padding-left: 73px;
+    border: 1px solid var(--light-grey);
+}
+
+.found-options-item-3 img {
+    width: 135px;
+    height: 95px;
+    padding: 0;
+    margin: 0;
+    margin-right: 29px;
+}
+
+.options-hotel-column h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 7px;
+    
+}
+
+.cost {
+    margin: 0;
+    margin-bottom: 15.5px;
+}
+
+.cost dt {
+    float: left;
+    margin-right: 38.26px;
+}
+
+.cost dd {
+    margin: 0;
+}
+
+.cost-buttons {
+    display: flex;
+}
+
+.more-info-button {
+  width: 110px;
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--basic-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 6px;
+  padding: 3px 17px;
+}
+
+.reserved-button {
+    padding: 3px 17px;
+}
+
+.rating-star p {
+    margin: 0;
+    padding-left: 15px;
+    background-color: var(--extra-light-gray);
+    color: var(--deep-gray);
+}
+
+.stars2 {
+    width: 38px;
+    height: 17px;
+    padding: 0;
+    margin-bottom: 47px;
+    margin-left: auto;
+    background-image: url(/img/star.svg);
+    background-repeat: repeat-x;
+}
+
+
+/* .found-options-list {
     display: grid;
     grid-template-rows: 150px 150px 150px;
 }
@@ -869,7 +1189,7 @@ ul {
     padding: 3px;
     padding-left: 17px;
     padding-right: 17px;
-}
+} */
 
 .more-info-button:hover {
     background-color: var(--medium-blue);
@@ -895,7 +1215,7 @@ ul {
     background-color: var(--medium-brown);
 }
 
-.rating {
+/* .rating {
     width: 110px;
     height: 27px;
     font-size: 14px;
@@ -909,9 +1229,9 @@ ul {
     padding-right: 12px;
     padding-top: 3px;
     padding-bottom: 3px;
-}
+} */
 
-.rating-star4 {
+/* .rating-star4 {
     width: 75px;
     height: 17px;
     background-image: url("/img/star.svg");
@@ -928,4 +1248,4 @@ ul {
     width: 38px;
     height: 17px;
     background-image: url("/img/star.svg");
-}
+} */
