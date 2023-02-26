@@ -482,7 +482,7 @@ img {
 
 .booking-item:nth-child(1)::after,
 .booking-item:nth-child(2)::after {
-    content: url(/img/calendar.svg);
+    content: url("data:image/svg+xml,%3Csvg width='21' height='23' viewBox='0 0 21 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z' fill='%23A9A9A9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z' fill='%23A9A9A9'/%3E%3C/svg%3E");
     width: 21px;
     height: 23px;
     right: 9px;
@@ -490,11 +490,9 @@ img {
     position: absolute;
 }
 
-/* пока не знаю как менять цвет свг-псевдоэлемента 
-.booking-item:nth-child(1)::after,
-.booking-item:nth-child(2)::after:hover {
-    stroke: #5496BD;
-} */
+.booking-item:nth-child(1):hover::after{
+   fill: #000000;
+}
 
 .booking-item,
 .booking-item ::placeholder {
@@ -672,7 +670,7 @@ textarea:focus {
 /*Filter*/
 
 .inner-page {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .filters h2 {
@@ -688,13 +686,13 @@ textarea:focus {
     padding-left: 72px;
     padding-right: 72px;
     padding-top: 26.5px;
-    margin-top: -14px;
     display: flex;
     color: var(--basic-white);
     background-image: url("/img/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /*При финальной стилизации удалить background-size и задать требуемые гразмеры изображения*/
+    border: none;
 }
 
 .filter-parameters-1 {
@@ -736,6 +734,151 @@ textarea:focus {
     margin: 0;
     border: none;
 }
+
+.filter-option label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input+label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--basic-white);
+  top: 0;
+  left: -40px;
+  border-radius: 3px;
+}
+
+.filter-input:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    top: 1px;
+    left: -35px;
+    background-image: url(/img/check-shape.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.range-filter {
+    width: 317px;
+    margin-top: 10.5px;
+}
+
+.filter-parameters-1 legend,
+.filter-parameters-2 legend,
+.filter-parameters-input legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.price-controls input,
+.price-controls input {
+  border: 2px solid var(--basic-white);
+  width: 156.5px;
+  padding: 0;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 2px;
+  text-align: center;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+
+.min-price input {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.price-controls::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background-color: var(--basic-white);
+    right: 157.5px;
+    top: 7px;
+  }
+
+.max-price input {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.price-controls input:focus {
+  outline: none;
+}
+
+.range-controls {
+  height: 11.5px;
+  padding-top: 9.5px;
+  background-color: transparent;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scale .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 1.2px;
+    left: 0;
+    width: 3.8px;
+    height: 3.8px;
+    padding: 0;
+    border: 7.6px solid #FFFFFF;
+    background-color: #ababab;  
+    border-radius: 50%;
+    box-shadow: 0 1.9px 0 0 rgba(171, 171, 171, 0.3);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min{
+    left: 0;
+}
+
+.range-controls .toggle-max{
+    left: 222px;
+}
+
+.range-controls .toggle:hover {
+  scale: 1.2;
+}
+
+
+/* .filter-parameters-input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
 
 /* .filter {
     display: grid;
@@ -780,10 +923,17 @@ ul {
 
 .sorting-setting {
     display: flex;
-    height: 86px;
+    height: 57px;
+    padding-top: 29px;
+    padding-left: 73px;
+}
+
+.sorting-setting h2 {
+   height: 26px;
 }
 
 .sorting-setting-list {
+    height: 19px;
     margin: 0;
     padding: 0;
 }
@@ -804,8 +954,23 @@ ul {
 }
 
 .sorting-button-list {
-    margin-left: auto;
+    /* margin-left: auto; */
     display: flex;
+    width: 34px;
+    height: 10px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.button-button-up,
+.button-button-down {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-button-down:hover  {
+  background-color: var(--basic-black);
 }
 
 
@@ -864,6 +1029,10 @@ ul {
 .sorting-setting-list,
 .sorting-button-list {
     list-style: none;
+}
+
+.sorting-button-list {
+  height: 10px;
 }
 
 .sorting-setting-item a:hover,
