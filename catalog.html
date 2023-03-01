@@ -79,7 +79,10 @@
                         <div class="toggle toggle-min" style="left:0" tabindex="0"></div>
                         <div class="toggle toggle-max" style="left:70%" tabindex="0"></div>
                       </div>
-                    </fieldset>
+                     </div>
+                      <button class="filter-parameters-button">Показать</button>
+                 </fieldset>
+                  
             </form>
         </section>
         <section class="sorting-setting">
@@ -91,18 +94,18 @@
                 <li class="sorting-setting-item"><a href="#">По рейтингу</a></li>
             </ul>
             <div class="sorting-button-list">
-                <input class="button-button-up" type="button" name="up" disabled tabindex="0">
-                  <!-- <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/> -->
-                  </svg>
-                <input class="button-button-down" type="button" name="down" tabindex="0">
-                  <!-- <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#CACACA"/> -->
-                  </svg>
+                <button class="button-up" value="disabled" tabindex="0">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                </button>
+                <button class="button-down" tabindex="0">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#CACACA"/>
+                </button>
             </div>
         </section>
-        <section>
-            <h2 class="found-option-title">Предлагаемые варианты</h2>
+        <section class="catalog-content">
+            <h2 class="visually-hidden">Предлагаемые варианты</h2>
             <ol class="found-options-list">
                 <li class="found-options-item-1">
                     <img src="img/Amararesort.jpg" width="135" height="90" alt="Amara Resort Spa">
