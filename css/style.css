@@ -67,6 +67,22 @@ a {
     text-decoration: none;
 }
 
+/* Pattern */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
 
 
 /*Grid*/
@@ -472,7 +488,6 @@ a {
 .booking p:nth-child(2) input {
     text-indent: 10px;
 }
-}
 
 .booking-item input:hover{
   background-color: var(--grey);
@@ -639,6 +654,7 @@ textarea:focus {
 
 .contact-phone {
     padding-left: 68px;
+    color: var(--basic-black);
 }
 
 
@@ -780,6 +796,11 @@ textarea:focus {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+.filter-input-checkbox {
+    margin-left: -30px;
+    margin-top: 10px;
 }
 
 .filter-parameters-button {
@@ -1320,15 +1341,3 @@ ul {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }

@@ -20,7 +20,7 @@
             <li><a class="information-nav" href="blank.html">Информация</a></li>
             <li><a class="photo-nav" href="blank.html">Фото и видео</a></li>
             <li><a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+              <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" aria-label="Ссылка для возврата на главную страницу в виде логотипа Седона">
             </a></li>
             <li><a class="map-nav" href="blank.html">Карта штата</a></li>
             <li><a class="catalog-nav" href="catalog.html">Гостиницы</a></li>
@@ -32,7 +32,7 @@
         <h1 class="visually-hidden">Предложения</h1>
         <section class="filters">
             <h2>Фильтр поиска</h2>
-              <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+              <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
                 <fieldset class="filter-parameters-1">
                     <legend>Инфраструктура:</legend>
                     <ul class="filter-parameters filter-parameters__list-1">
@@ -63,10 +63,10 @@
                     <div class="range-filter">
                       <div class="price-controls">
                         <label class="min-price">
-                          <input type="text" name="min-price" value="ОТ 0">
+                          <input type="text" name="min-price" value="ОТ 0" aria-label="Стоимость в сутки от в рублях">
                         </label>
                         <label class="max-price">
-                          <input type="text" name="max-price" value="ДО 3000">
+                          <input type="text" name="max-price" value="ДО 3000" aria-label="Стоимость в сутки до в рублях">
                         </label>
                       </div>
                       <div class="range-controls">
@@ -75,11 +75,11 @@
                             width: 80%;
                             margin-left: 0%;"></div>  
                         </div>
-                        <div class="toggle toggle-min" style="left:0" tabindex="0"></div>
-                        <div class="toggle toggle-max" style="left:80%" tabindex="0"></div>
+                        <div class="toggle toggle-min" style="left:0" tabindex="0" aria-label="Контроллер минимального значения диапазона цены"></div>
+                        <div class="toggle toggle-max" style="left:80%" tabindex="0" aria-label="Контроллер максимального значения диапазона цены"></div>
                       </div>
                      </div>
-                      <button class="filter-parameters-button">Показать</button>
+                      <button class="filter-parameters-button" aria-label="Показать найденные варианты по выбранным критериям">Показать</button>
                  </fieldset>
                   
             </form>
@@ -88,16 +88,16 @@
             <h2>Найдено: 3</h2>
             <ul class="sorting-setting-list">
                 <li class="sorting-setting-title">Сортировка:</li>
-                <li class="sorting-setting-item"><a href="#">По цене</a></li>
-                <li class="sorting-setting-item"><a href="#">По типу</a></li>
-                <li class="sorting-setting-item"><a href="#">По рейтингу</a></li>
+                <li class="sorting-setting-item"><a href="#" aria-label="Сортировка по цене">По цене</a></li>
+                <li class="sorting-setting-item"><a href="#" aria-label="Сортировка по типу">По типу</a></li>
+                <li class="sorting-setting-item"><a href="#" aria-label="Сортировка по рейтингу">По рейтингу</a></li>
             </ul>
             <div class="sorting-button-list">
-                <button class="button-up" value="disabled" tabindex="0">
+                <button class="button-up"  aria-label="Сортировать по возрастанию" tabindex="0">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
                 </button>
-                <button class="button-down" tabindex="0">
+                <button class="button-down" aria-label="Сортировать по убыванию" tabindex="0">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#CACACA"/>
                 </button>
@@ -106,13 +106,13 @@
         <section class="catalog-content">
             <h2 class="visually-hidden">Предлагаемые варианты</h2>
             <ol class="found-options-list">
-                <li class="found-options found-options_item-1">
-                    <img src="img/Amararesort.jpg" width="135" height="90" alt="Amara Resort Spa">
+                <li class="found-options found-options_item-1" tabindex="0">
+                    <img src="img/Amararesort.jpg" width="135" height="90" alt="Лужайка и бассейн с выходом на гору на фоне алого заката ">
                   <div class="options-hotel-column">
                     <h3>Amara Resort & Spa</h3>
                         <dl class="cost">
                         <dt>Гостиница</dt>
-                        <dd>От 4000 Р</dd>
+                        <dd>От 4000 р</dd>
                       </dl>
                       <div class="cost-buttons">
                         <button class="more-info-button" type="button">Подробнее</button>
@@ -120,18 +120,18 @@
                       </div>
                   </div>
                   <div class="rating-star">
-                    <div class="stars4"></div>
+                    <div class="stars4" aria-label="4 звезды"></div>
                     <p>Рейтинг: 8.5</p>
                   </div>
                 </li>
                 
-                <li class="found-options found-options_item-2">
-                    <img src="img/desertqauilinn.jpg" width="135" height="90" alt="Дезерт Колл Инн">
+                <li class="found-options found-options_item-2" tabindex="0">
+                    <img src="img/desertqauilinn.jpg" width="135" height="90" alt="Строение у дороги на фоне голубого ясного неба с табличкой на переднем плане">
                   <div class="options-hotel-column">
                     <h3>Desert Quail Inn</h3>
                     <dl class="cost">
                         <dt>Мотель</dt>
-                        <dd>От 3000 Р</dd>
+                        <dd>От 3000 р</dd>
                     </dl>
                     <div class="cost-buttons">
                       <button class="more-info-button" type="button">Подробнее</button>
@@ -139,18 +139,18 @@
                     </div>
                   </div>
                   <div class="rating-star">
-                    <div class="stars3"></div>
+                    <div class="stars3" aria-label="3 звезды"></div>
                     <p>Рейтинг: 8.9</p>
                   </div>
                 </li>
                 
-                <li class="found-options found-options_item-3">
-                    <img src="img/pocodiablo.jpg" width="135" height="90" alt="Виллас у поко Дьябло">
+                <li class="found-options found-options_item-3" tabindex="0">
+                    <img src="img/pocodiablo.jpg" width="135" height="90" alt="Дом на с зеленым газоном под зелеными деревьями">
                   <div class="options-hotel-column">
                     <h3>Villas At Poco Diablo</h3>
                     <dl class="cost">
                       <dt>Апартаменты</dt>
-                      <dd>От 2000 Р</dd>
+                      <dd>От 2000 р</dd>
                     </dl>
                     <div class="cost-buttons">
                       <button class="more-info-button" type="button">Подробнее</button>
@@ -158,7 +158,7 @@
                     </div>
                   </div>  
                   <div class="rating-star">
-                    <div class="stars2"></div>
+                    <div class="stars2" aria-label="2 звезды"></div>
                     <p>Рейтинг: 9.2</p>
                   </div>
                 </li>
@@ -168,22 +168,22 @@
     <footer class="main-footer footer-inner-page">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p>#Visitsedona</p>
-        <a class="contact-phone">+7 800 555-86-28</a>
+        <p aria-label="Хештег визитседона">#visitsedona</p>
+        <a href="tel: +78005558628" class="contact-phone" aria-label="Контактный номер">+7 800 555-86-28</a>
       </section>
       <section class="footer-social">
         <ul class="footer-social-list">
           <li>
-            <a class="footer-social-list-item" href="#">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="footer-social-list-item" href="#" aria-label="Твиттер">
+              <svg focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14385C12.635 0.647845 13.934 1.41385 14.527 2.32284C15.2 2.09184 15.858 1.84185 16.538 1.61485C16.5249 2.30121 16.2117 2.94736 15.681 3.38284C16.366 3.55284 16.985 2.89184 16.985 2.89184C16.816 3.89184 15.979 4.67984 15.422 4.91584C15.191 11.6658 12.247 16.1328 5.34501 15.9978H4.89901C4.48901 15.9978 0.735007 15.5378 0.00100708 14.1108C2.27201 14.3068 3.89401 13.6888 4.69401 12.9338C3.73401 12.6338 2.01501 12.4568 1.71501 9.98384C2.06401 10.0898 2.27901 10.2118 2.90501 10.1028C1.70501 9.24685 0.374007 8.52984 0.448007 6.32984C0.733007 6.65784 1.51501 6.86585 1.78801 6.80185C1.08501 6.56085 -0.181993 3.44184 0.894007 1.84984C2.71201 3.70384 4.62901 5.45585 8.04601 5.62285C8.25401 3.32985 9.18301 1.79285 10.95 1.14385Z" fill="white"/>
                 </svg>
              <!-- <img src="img/twitter.svg" width="16.98px" height="15.01px" alt="Твиттер"> -->
             </a>
           </li>
           <li>
-            <a class="footer-social-list-item" href="#">
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="footer-social-list-item" href="#" aria-label="Фейсбук">
+              <svg focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
                 </svg>
                 
@@ -191,8 +191,8 @@
             </a>
           </li>
           <li>
-            <a class="footer-social-list-item" href="#">
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="footer-social-list-item" href="#" aria-label="Ютуб">
+              <svg focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
                 </svg>
              <!-- <img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб"> -->
@@ -202,7 +202,7 @@
       </section>
       <section class="footer-copyright">
           <p>website by</p>
-          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано html academy"><svg focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black"/>
             <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="black"/>
             <path d="M26.6171 4.82672H21.8082V1.07324H19.7778V4.82672H17.8542V6.79998H19.7778V12.7841C19.7778 14.5 20.7396 15.4437 22.4708 15.4437H26.6171V13.449H22.8769C22.193 13.449 21.8082 13.0629 21.8082 12.398V6.79998H26.6171V4.82672Z" fill="black"/>
