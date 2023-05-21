@@ -390,9 +390,18 @@ a {
   padding-bottom: 55px;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  position: relative;
+  position: absolute;
   z-index: 2;
-  /* display: none;  */
+  display: none; 
+}
+
+.booking-form-show {
+ display: flex;
+ animation: bounce 0.6s;
+}
+
+.booking-form-error {
+    animation: shake 0.6s;  
 }
 
 .form-wrapper {
@@ -598,8 +607,7 @@ textarea:focus {
 }
 
 .location {
-  position: absolute;
-  bottom: -204.4px;
+    height: 480px;
 }
 
 .location img {
@@ -623,7 +631,7 @@ textarea:focus {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    bottom: -77.5px;
+    /* bottom: 125.5px; */
 }   
 
 .footer-inner-page {
@@ -1341,3 +1349,37 @@ ul {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/* Animation modal */
+
+@keyframes bounce {
+    0% {                /* Старт анимации */
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {              /* в финале анимации - финал это заданная 0.55s */
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
