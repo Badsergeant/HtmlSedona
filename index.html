@@ -15,87 +15,83 @@
 </head>
 
 <body class="page-body">
-  
-  <header class="main-header">
+  <div class="wrapper">
+   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
-      </a>
-        
           <ul class="site-navigation">
-            <li><a href="blank.html">Инфомация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостинницы</a></li>
+            <li><a class="information-nav" href="blank.html">Информация</a></li>
+            <li><a class="photo-nav" href="blank.html">Фото и видео</a></li>
+            <li><a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" aria-label="Ссылка для возврата на главную страницу в виде логотипа Седона">
+            </a></li>
+            <li><a class="map-nav" href="blank.html">Карта штата</a></li>
+            <li><a class="catalog-nav" href="catalog.html">Гостиницы</a></li>
+    
           </ul>
-        <DIV>Test TEST COMMIT</DIV>
-    </nav>
+      </nav>
   </header>
   <main class="container">
-    <h1>Город Седона</h1>
+    <h1 class="visually-hidden">Город Седона</h1>
     <section class="promo">
       <div class="promologo">
         <img class="promowelcome" src="img/Promowelcome/promo_logo.svg" width="456.65" height="350.88" alt="Добро пожаловать в седону">
       </div>
-      <h2>Седона-небольшой городок в Аризоне,<br>
-        заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин,по которым Седона круче,чем Гранд Каньон!</p>
-    
-    </section>
+      <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
+      </section>
     <section class="features">
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
-        <li class="feature-item-1">
-          <h3>Настоящий<br>
+        <li class="feature-item feature-item-1">
+          <h3>Настоящий <br>
             городок</h3>
-          <p>-№1-</p>
-          <p>Седона - не атракцион для туристов, там<br>
-            течет своя жизнь</p>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для туристов, там<br>
+            течёт своя жизнь</p>
         </li>
-        <img class="house" src="img/imagehome.jpg" width="800" height="256" alt="Дом">
-        <li class="feature-item-2">
+        <li class="feature-item-image house"><img src="img/imagehome.jpg" width="800" height="256" alt="Дом"></li>
+        <li class="feature-item feature-item-2">
           <h3>Там есть<br>
             мост дьявола</h3>
-          <p>-№2-</p>
+          <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
         </li>
-        <img class="bridge" src="img/imagerocks.jpg" width="800" height="256" alt="Мост">
-        <!--</div>-->
-        <li class="feature-item-3">
+        <li class="feature-item-image bridge"><img src="img/imagerocks.jpg" width="800" height="256" alt="Мост"></li>
+        <li class="feature-item feature-item-3">
           <h3>Небольшая<br>
             площадь</h3>
-          <p>-№3-</p>
+          <p>— №3 —</p>
           <p>Все достопримечательности<br>
             находятся очень близко</p>
         </li>
-        <li class="feature-item-4">
+        <li class="feature-item feature-item-4">
           <h3>Красивая<br>
             дорога</h3>
-          <p>-№4-</p>
+          <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно!</p>
         </li>
-        <li class="feature-item-5">
+        <li class="feature-item feature-item-5">
           <h3>Мало<br>
             туристов</h3>
-          <p>-№5-</p>
+          <p>— №5 —</p>
           <p>Большинство едет в Гранд каньон<br>
             и толпится там</p>
         </li>
-        <li class="feature-item-recommendation-1">
+        <li class="feature-item-recommendation recommendation-1">
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем<br>
             мотеле, все как в кино!</p>
           <img src="img/iconhouse-1.svg" width="75" height="72" alt="Домик">
         </li>
-        <li class="feature-item-recommendation-2">
+        <li class="feature-item-recommendation recommendation-2">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер,<br>
             вы не разочаруетесь!</p>
           <img src="img/iconburger-3.svg" width="75" height="70" alt="Бургер">
         </li>
-        <li class="feature-item-recommendation-3">
+        <li class="feature-item-recommendation recommendation-3">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного<br>
             производства!</p>
@@ -106,62 +102,127 @@
    
     <section class="booking">
       <h2>Заинтересовались?</h2>
-      <p class="booking-info">Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения в Седоне</p>
-      <button class="booking-form-open" type="button">Поиск гостинницы в Седоне</button>
-      <h2>Форма поиска по параметрам</h2>
-      <form class="booking-form" action="https://echo.htmlacademy.ru" method="get">
-        <p class="booking-item"><label>Дата заезда:
-            <input type="text" name="entrance" placeholder="24 апреля 2017">
-          </label>
-          <input type="button" name="calendarbutton" value="calendar">
+      <p class="booking-info">Укажите предполагаемые даты поездки,<br> 
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="booking-form-open" type="button">Поиск гостиницы в седоне</button>
+      <h2 class="visually-hidden">Форма поиска по параметрам</h2>
+    
+      <form class="booking-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="form-wrapper">
+          <p class="booking-item">
+            <label for="booking-entrance">Дата заезда:</label>
+            <input class="input-entrance" id="booking-entrance" type="text" name="entrance" placeholder="24 апреля 2017">
+            <button class="calendar-button" aria-label="Кнопка выбора даты в виде календаря">
+              <svg focusable="false" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9" />
+              </svg>
+            </button>
         </p>
-        <p class="booking-item"><label>Дата выезда:
-            <input type="text" name="exit" placeholder="4 июля 2017">
-          </label>
-          <input type="button" name="calendarbutton" value="calendar">
+        <p class="booking-item">
+            <label for="booking-exit">Дата выезда:</label>
+            <input class="input-exit" id="booking-exit" type="text" name="exit" placeholder="4 июля 2017">
+            <button class="calendar-button" aria-label="Кнопка выбора даты в виде календаря">
+              <svg focusable="false" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9"/>
+              </svg>
+            </button>
         </p>
-        <p class="booking-item"><label>Взрослые:
-            <input type="number" name="adults" placeholder="2">
-          </label>
-        </p>
-        <p class="booking-item"><label>Дети:
-            <input type="number" name="childs" placeholder="0">
-          </label>
-        </p>
-        <button class="search" type="submit">Найти</button>
+        <p class="booking-item"> 
+            <label for="booking-adults">Взрослые:</label>
+            <input class="input-adults" id="booking-adults" type="text" name="adults" placeholder="2">
+            <button class="minus" aria-label="Убрать">
+              <svg focusable="false" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+              </svg>
+            </button>
+            <button class="plus" aria-label="Добавить">
+              <svg focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23083 6.76942V11H6.7693V6.76942H11V4.23096H6.7693V0H4.23083V4.23096H0V6.76942H4.23083Z" fill="#A9A9A9"/>
+              </svg>
+            </button>
+          </p>
+        <p class="booking-item"> 
+            <label for="booking-childs">Дети:</label>
+            <input class="input-childs" id="booking-childs" type="text" name="childs" placeholder="0">
+            <button class="minus" aria-label="Убрать">
+              <svg focusable="false" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+              </svg>
+            </button>
+            <button class="plus" aria-label="Добавить">
+              <svg focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23083 6.76942V11H6.7693V6.76942H11V4.23096H6.7693V0H4.23083V4.23096H0V6.76942H4.23083Z" fill="#A9A9A9"/>
+              </svg>
+            </button>
+          </p>
+        <button class="search">Найти</button>
+      </div>
       </form>
     </section>
     <section class="location">
-      <h2>Где мы находимся</h2>
-      <img src="img/map.jpg" width="1199" height="594" alt="Наше местонахождение на карте">
-    </section>
-
+      <h2 class="visually-hidden">Где мы находимся</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706042.0613255687!2d-112.20261258476158!3d34.71008197408443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1678123820219!5m2!1sru!2sru"
+       width="1200" height="594" allowfullscreen title="город Седона по адресу штат Аризона 86336, США">
+      </iframe>
+      </section>
   </main>
   <footer class="main-footer">
     <section class="footer-contacts">
-      <h2>Контактная информация</h2>
-      <p>#Visitsedona</p>
-      <a class="contact-phone">+7 800 555-86-28</a>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <p aria-label="Хештег визитседона">#visitsedona</p>
+      <a href="tel: +78005558628" class="contact-phone" aria-label="Контактный номер">+7 800 555-86-28</a>
     </section>
     <section class="footer-social">
       <ul class="footer-social-list">
-        <li><a class="footer-social-list-item-1" href="#">
-          
-          <img src="img/twitter.svg" width="20" height="16" alt="Твиттер"></a></li>
-        <li><a class="footer-social-list-item-2" href="#">
-          
-          <img src="img/fb-icon.svg" width="20" height="16" alt="Фейсбук"></a></li>
-        <li><a class="footer-social-list-item-3" href="#">
-          
-          <img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+        <li>
+          <a class="footer-social-list-item" href="#" aria-label="Твиттер">
+            <svg focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14385C12.635 0.647845 13.934 1.41385 14.527 2.32284C15.2 2.09184 15.858 1.84185 16.538 1.61485C16.5249 2.30121 16.2117 2.94736 15.681 3.38284C16.366 3.55284 16.985 2.89184 16.985 2.89184C16.816 3.89184 15.979 4.67984 15.422 4.91584C15.191 11.6658 12.247 16.1328 5.34501 15.9978H4.89901C4.48901 15.9978 0.735007 15.5378 0.00100708 14.1108C2.27201 14.3068 3.89401 13.6888 4.69401 12.9338C3.73401 12.6338 2.01501 12.4568 1.71501 9.98384C2.06401 10.0898 2.27901 10.2118 2.90501 10.1028C1.70501 9.24685 0.374007 8.52984 0.448007 6.32984C0.733007 6.65784 1.51501 6.86585 1.78801 6.80185C1.08501 6.56085 -0.181993 3.44184 0.894007 1.84984C2.71201 3.70384 4.62901 5.45585 8.04601 5.62285C8.25401 3.32985 9.18301 1.79285 10.95 1.14385Z" fill="white"/>
+              </svg>
+           <!-- <img src="img/twitter.svg" width="16.98px" height="15.01px" alt="Твиттер"> -->
+          </a>
+        </li>
+        <li>
+          <a class="footer-social-list-item" href="#" aria-label="Фейсбук">
+            <svg focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+              </svg>
+              
+           <!-- <img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук"> -->
+          </a>
+        </li>
+        <li>
+          <a class="footer-social-list-item" href="#" aria-label="Ютуб">
+            <svg focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+              </svg>
+           <!-- <img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб"> -->
+          </a>
+        </li>
       </ul>
     </section>
     <section class="footer-copyright">
         <p>website by</p>
-        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="115" height="33" alt="Html Academy"></a>
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано html academy"><svg focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black"/>
+          <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="black"/>
+          <path d="M26.6171 4.82672H21.8082V1.07324H19.7778V4.82672H17.8542V6.79998H19.7778V12.7841C19.7778 14.5 20.7396 15.4437 22.4708 15.4437H26.6171V13.449H22.8769C22.193 13.449 21.8082 13.0629 21.8082 12.398V6.79998H26.6171V4.82672Z" fill="black"/>
+          <path d="M41.1215 4.54688C39.497 4.54688 38.2576 5.34047 37.5736 6.60593H37.5095C36.8897 5.36193 35.7356 4.54688 34.154 4.54688C32.7434 4.54688 31.6746 5.29756 31.0336 6.34855H30.948V4.82571H29.0031V15.4427H31.0336V9.99479C31.0336 8.00007 32.0806 6.54159 33.6624 6.49869C35.1584 6.45579 36.0347 7.52822 36.0347 9.13684V15.4427H38.0652V9.82319C38.0652 7.44242 39.4758 6.49869 40.6941 6.49869C42.1688 6.49869 43.0452 7.52822 43.0452 9.13684V15.4427H45.0754V8.92236C45.0754 6.34855 43.6221 4.54688 41.1215 4.54688Z" fill="black"/>
+          <path d="M47.8272 12.6975C47.8272 14.4348 48.8104 15.4429 50.627 15.4429H52.636V13.4696H50.9262C50.2422 13.4696 49.8574 13.0835 49.8574 12.4186V0H47.8272V12.6975Z" fill="black"/>
+          <path d="M28.9048 19.6888H28.8192C28.027 18.6227 26.7425 17.8764 25.0295 17.8551C21.882 17.8124 19.6338 20.1365 19.6338 23.4202C19.6338 26.7252 21.9248 29.0494 25.008 29.0068C26.7637 28.9853 28.027 28.1965 28.8192 27.0663H28.9048V28.7081H30.9177V18.1536H28.9048V19.6888ZM25.3077 27.0451C23.081 27.0451 21.6679 25.4245 21.6679 23.4202C21.6679 21.4159 23.081 19.7954 25.3077 19.7954C27.4703 19.7954 28.8836 21.4159 28.8836 23.4202C28.8836 25.4033 27.4703 27.0451 25.3077 27.0451Z" fill="black"/>
+          <path d="M44.2094 21.9915C43.7169 19.6034 41.5972 17.855 38.8138 17.855C35.4523 17.855 33.2042 20.307 33.2042 23.4201C33.2042 26.5331 35.4523 29.0067 38.8138 29.0067C41.5972 29.0067 43.7169 27.2155 44.2094 24.8061H42.0898C41.6616 26.1494 40.3983 27.0662 38.8353 27.0662C36.6513 27.0662 35.238 25.4244 35.238 23.4201C35.238 21.4158 36.6513 19.7953 38.8353 19.7953C40.4624 19.7953 41.6616 20.7548 42.0898 21.9915H44.2094Z" fill="black"/>
+          <path d="M55.0836 19.6888H54.998C54.2057 18.6227 52.921 17.8764 51.208 17.8551C48.0606 17.8124 45.8124 20.1365 45.8124 23.4202C45.8124 26.7252 48.1035 29.0494 51.1866 29.0068C52.9424 28.9853 54.2057 28.1965 54.998 27.0663H55.0836V28.7081H57.0962V18.1536H55.0836V19.6888ZM51.4865 27.0451C49.2595 27.0451 47.8465 25.4245 47.8465 23.4202C47.8465 21.4159 49.2595 19.7954 51.4865 19.7954C53.6491 19.7954 55.0621 21.4159 55.0621 23.4202C55.0621 25.4033 53.6491 27.0451 51.4865 27.0451Z" fill="black"/>
+          <path d="M68.6538 19.7953H68.5682C67.776 18.6652 66.4483 17.8763 64.7568 17.855C61.6738 17.8123 59.3827 20.1365 59.3827 23.4415C59.3827 26.7251 61.6309 29.0493 64.7783 29.0067C66.4483 28.9853 67.776 28.239 68.5468 27.1729H68.6538V28.708H70.6665V13.356H68.6538V19.7953ZM65.0568 27.0662C62.8298 27.0662 61.4168 25.4458 61.4168 23.4415C61.4168 21.4372 62.8298 19.8166 65.0568 19.8166C67.2193 19.8166 68.6324 21.4585 68.6324 23.4415C68.6324 25.4458 67.2193 27.0662 65.0568 27.0662Z" fill="black"/>
+          <path d="M78.3297 17.855C75.0752 17.855 72.8483 20.3497 72.8483 23.4414C72.8483 26.4479 74.9467 29.0067 78.3724 29.0067C80.8561 29.0067 82.8475 27.6633 83.5541 25.4244H81.4342C80.9634 26.4267 79.8286 27.0662 78.4582 27.0662C76.5312 27.0662 75.1608 25.7869 75.0108 24.1451H83.7682C84.0464 20.6269 81.8412 17.855 78.3297 17.855ZM78.2868 19.7953C79.9783 19.7953 81.2416 20.8401 81.5627 22.354H75.0538C75.3534 20.8614 76.6168 19.7953 78.2868 19.7953Z" fill="black"/>
+          <path d="M98.1985 17.8765C96.5713 17.8765 95.3295 18.6654 94.6443 19.9234H94.5799C93.9591 18.6867 92.8029 17.8765 91.2184 17.8765C89.8054 17.8765 88.7347 18.6227 88.0924 19.6675H88.0068V18.1536H86.0583V28.7082H88.0924V23.2923C88.0924 21.3094 89.1417 19.8595 90.7261 19.8168C92.2247 19.7742 93.1028 20.8403 93.1028 22.4395V28.7082H95.1368V23.1218C95.1368 20.755 96.5499 19.8168 97.7703 19.8168C99.2477 19.8168 100.125 20.8403 100.125 22.4395V28.7082H102.16V22.2262C102.16 19.6675 100.704 17.8765 98.1985 17.8765Z" fill="black"/>
+          <path d="M109.441 27.0234L105.801 18.1533H103.553L108.392 29.7101L108.371 29.7528C108.028 30.6269 107.643 30.9468 106.701 30.9468H104.196V32.9723H106.701C108.542 32.9723 109.527 32.1408 110.212 30.3497L114.88 18.1533H112.803L109.441 27.0234Z" fill="black"/>
+          </svg></a>
     </section>
   </footer>
+</div>
+<script src="/js/script.js"></script>
 </body>
 
 </html>
