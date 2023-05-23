@@ -210,7 +210,8 @@ a {
     padding-bottom: 0;
     width: 1200px;
     height: 435px;
-    background-image: url(/img/background_photo.jpg);
+    background-image: url(/img/background-photo.jpg);
+
     background-repeat: no-repeat;
     /* outline: 5px solid rgba(186, 41, 5, 0.709);
     outline-offset: -5px ; */
@@ -751,7 +752,7 @@ textarea:focus {
     padding-bottom: 32.5px;
     display: flex;
     color: var(--basic-white);
-    background-image: url("/img/background.jpg");
+    background-image: url(/img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /*При финальной стилизации удалить background-size и задать требуемые гразмеры изображения*/
